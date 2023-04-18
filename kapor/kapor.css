@@ -1,0 +1,31 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #336600;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#cim {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#noveny {
+    float: right;
+    margin: 0 10px 0 10px;
+    border: 2px solid #336600;
+}
+
+.felkover {
+    font-weight: 600;
+}
+
+.alcim {
+    color: #22b14c;
+}
