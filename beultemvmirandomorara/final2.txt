@@ -1,0 +1,37 @@
+Borka Bálint	6.0
+Bundik László	3.5
+Csőke András	4.0
+Farnady Botond	1.0
+Fehér Mátyás	2.0
+Felisberto Chivela	5.0
+Fodor István	5.0
+Gerely Mihály 	2.0
+Gerely Szilárd	3.0
+Harsányi András	4.0
+Hatalyák Gyula	2.0
+Hluhov Roland 	5.0
+Horváth Attila Géza	5.0
+Hummel Vendel	2.0
+Kemény Botond 	3.0
+Kiss Bertalan	4.0
+Komlósi Máté	4.0
+Kovács Gergely	3.0
+Kovács Levente Lajos	3.0
+Lakatos Ádám	3.0
+Madina Boulfiza	3.0
+Miscsenko Dávid	4.5
+Molnár Zoltán	5.0
+Morvai Zente Péter	5.5
+Ménesi Bodza Fanni	1.0
+Ménesi Málna Panna	0.0
+Nagy László Géza 	2.5
+Nguyen Tuan Dung	3.0
+Oberrecht Miklós 	3.5
+Palotai Hugó	3.0
+Paróczai Dávid	4.5
+Perger Ákos	3.0
+Puha Levente	4.0
+Szabó Bence Dominik	4.0
+Székely Hunor	4.0
+Tóbiás Nimród Tamás 	2.0
+Vig Norbert	6.0

@@ -1,0 +1,35 @@
+Start.txt 
+A verseny startlistája: név, szül_dát, nem
+
+Final.txt
+A verseny végeredménye (a helyezések sorrendjében): név, pontszám
+
+1. Hányan vettek részt a versenyen?
+
+2. Hány nő volt a versenyen? (nem="n")
+
+3. Hány 14 év alatti volt a versenyen?
+
+4. Az összes nő pontjainak száma volt-e több, mint a bajnok pontszáma?
+
+Az 1-3 helyezettek díjat kapnak, és különdíjakat kapnak a különböző kategóriák legeredményesebb versenyzői. 
+
+5. Írasd ki az 1-3 helyezettek neveit!
+
+6. A legjobb nem díjazott női versenyző különdíjat kap. Ki volt ő? Ha nem volt ilyen, akkor írja ki: "Nem volt legjobb, nem díjazott nő"
+
+7. A legjobb nem díjazott 14-18 év közötti versenyző különdíjat kap. Ki volt ő? Ha nem volt ilyen, akkor írja ki: "Nem volt legjobb, nem díjazott U18"
+Az évet nézzük, hogy ha a tárgyév-születési év kisebb egyenlő, mint 18, de nagyobb, mint 14
+
+8. A legjobb nem díjazott U14-es versenyző különdíjat kap. Ki volt ő? Ha nem volt ilyen, akkor írja ki: "Nem volt legjobb, nem díjazott U14"
+Az évet nézzük, hogy ha a tárgyév-születési év kisebb egyenlő, mint 14
+ 
+9. A legidősebb versenyző különdíjat kap. Ki volt ő?
+10. A legfiatalabb versenyző különdíjat kap. Ki volt ő?
+
+11. Írasd ki a végeredményt, a final.txt mintájára egy final2.txt-be, bév szerinti sorrendben az eredményeket!
+
+Itt talalod a versenykiírást:
+https://grund64.hu/amator-sakkbajnoksag.html
+
+
