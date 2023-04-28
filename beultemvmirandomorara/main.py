@@ -21,11 +21,22 @@ def calculate_age(birthdate: str) -> int:
     age = today.year - birthdate_datetime.year - ((today.month, today.day) < (birthdate_datetime.month, birthdate_datetime.day))
     return age
 
-with open("start.txt") as f, open("final.txt") as f2:
-    start_data = [x.split("\t") for x in f.read().strip().split("\n")][1:]
-    final_data = [x.split("\t") for x in f2.read().strip().split("\n")][1:]    
-    start_data.sort(key=lambda x: x[0])
-    final_data.sort(key=lambda x: x[0])
+encodings = ['utf-8', 'ascii', 'windows-1250', 'windows-1252', 'iso8859_1']
+for e in encodings:
+    try:
+        with open("start.txt", "r", encoding=e) as f, open("final.txt", "r", encoding=e) as f2:
+            start_data = [x.split("\t") for x in f.read().strip().split("\n")][1:]
+            final_data = [x.split("\t") for x in f2.read().strip().split("\n")][1:]    
+            start_data.sort(key=lambda x: x[0])
+            final_data.sort(key=lambda x: x[0])
+    except UnicodeDecodeError:
+        print(f"A fájl űgy tűnik nem {e} kódolású, újrapróbálkozás...")
+    except FileNotFoundError:
+        print(f"A fájl nem létezik!")
+        exit()
+    else:
+        print(f"A fájl megnyitása {e} kódolással...")
+        break
 
 people = []
 for (x, y) in zip(start_data, final_data):
@@ -56,7 +67,7 @@ def feladat4(people: list) -> int:
             fem_points += person.points
         if person.points > champion_points:
             champion_points = person.points
-    return "A nőknek több pontja volt mint a bajnoknak" if champion_points > fem_points else "A bajnoknak több pontja volt mint a nőknek"
+    return "A nőknek több pontja volt mint a bajnoknak" if champion_points < fem_points else ("A bajnokoknak és a nőknek ugyanannyi pontja van" if champion_points == fem_points else "A bajnoknak több pontja volt mint a nőknek")
 
 def feladat5(people):
     sorted_people = sorted(people, key=lambda s: s.points, reverse=True)
