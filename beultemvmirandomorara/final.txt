@@ -1,0 +1,38 @@
+Név	Pont
+Borka Bálint	6
+Víg Norbert	6
+Morvai Zente Péter	5.5
+Molnár Zoltán	5
+Felisberto Chivela	5
+Fodor István	5
+Hluhov Roland	5
+Horváth Attila Géza	5
+Paróczai Dávid	4.5
+Miscsenko David	4.5
+Kiss Bertalan	4
+Puha Levente	4
+Csőke András	4
+Komlósi Máté	4
+Harsányi András	4
+Székely Hunor	4
+Szabó Bence Dominik	4
+Oberrecht Miklós	3.5
+Bundik László	3.5
+Lakatos Ádám	3
+Kovács Gergely	3
+Kemény Botond	3
+Palotai Hugó	3
+Gerely Szilárd	3
+Kovács Levente Lajos	3
+Nguyen Tuan Dung	3
+Madina Boulfiza	3
+Perger Ákos	3
+Nagy László Géza	2.5
+Hatalyák Gyula	2
+Gerely Mihály	2
+Hummel Vendel	2
+Fehér Mátyás	2
+Tóbiás Nimród Tamás	2
+Farnady Botond	1
+Ménesi Bodza Fanni	1
+Ménesi Málna Panna	0

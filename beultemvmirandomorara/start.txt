@@ -1,0 +1,38 @@
+Versenyző neve	Születési dátum	nem
+Borka Bálint	2000.12.15	f
+Bundik László	1983.09.21	f
+Csőke András	1989.06.21	f
+Farnady Botond	2011.06.11	f
+Fehér Mátyás	2007.09.05	f
+Felisberto Chivela	1989.11.17	f
+Fodor István	1989.07.14	f
+Gerely Mihály 	2007.07.16	f
+Gerely Szilárd	2005.10.31	f
+Harsányi András	2009.10.04	f
+Hatalyák Gyula	1982.12.19	f
+Hluhov Roland 	1991.07.08	f
+Horváth Attila Géza	1985.04.02	f
+Hummel Vendel	2006.03.05	f
+Kemény Botond 	2002.06.29	f
+Kiss Bertalan	2006.01.31	f
+Komlósi Máté	1987.07.28	f
+Kovács Gergely	2002.10.25	f
+Kovács Levente Lajos	2008.07.29	f
+Lakatos Ádám	1987.12.14	f
+Madina Boulfiza	1998.03.06	n
+Ménesi Bodza Fanni	2013.09.27	n
+Ménesi Málna Panna	2013.09.27	n
+Miscsenko Dávid	1993.12.29	f
+Molnár Zoltán	1972.01.01	f
+Morvai Zente Péter	2011.07.12	f
+Nagy László Géza 	2006.12.26	f
+Nguyen Tuan Dung	2008.12.17	f
+Oberrecht Miklós 	2014.07.22	f
+Palotai Hugó	1997.02.10	f
+Paróczai Dávid	1984.06.21	f
+Perger Ákos	2002.06.18	f
+Puha Levente	2002.04.05	f
+Szabó Bence Dominik	2001.04.05	f
+Székely Hunor	1986.05.11	f
+Tóbiás Nimród Tamás 	2010.12.11	f
+Vig Norbert	2001.07.16	f
