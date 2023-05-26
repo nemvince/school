@@ -1,0 +1,40 @@
+Acsalapu;level;6;8
+Akac;virag;5;9
+Apro bojtorjanfu;viragzo hajtas;6;8
+Aranyvesszofu;viragzo hajtas;7;8
+Bakfu;viragzo hajtas;6;8
+Berkenye;termes;9;10
+Bodza;viragzat;5;6
+Bojtorjan;gyoker;9;4
+Boroka;termes;8;10
+Csalan;level;7;9
+Csarab;viragzo hajtas;7;9
+Cserszomorce;level;6;8
+Csillagpazsit;gyokertorzs;10;4
+Csipkerozsa;altermes;9;11
+Csombormenta;viragzo hajtas;6;8
+Diofa;level;6;8
+Edesgyoker;gyoker;10;4
+Ezerjofu;viragzo hajtas;6;8
+Falgyomfu;viragzo hajtas;6;8
+Fatyolvirag;gyoker;9;5
+Fecskefu;viragzo hajtas;5;6
+Feher arvacsalan;virag;5;6
+Feher fagyongy;leveles hajtas;11;4
+Feher malyva;level;6;8
+Feher urom;level;5;6
+Fekete afonya;level;6;9
+Fekete nadalyto;level;6;8
+Fekete ribizli;level;7;8
+Fekete uromfu;level;6;8
+Fustikefu;viragzo hajtas;5;8
+Galagonya;virag;5;6
+Gemorrfu;viragzo hajtas;5;8
+Golyaorrfu;viragzo hajtas;5;7
+Gyermeklancfu;level;4;6
+Gyongyvirag;level;6;7
+Gyujtovanyfu;viragzo hajtas;7;8
+Harsfa;viragzat;5;6
+Homoki gyopar;viragzat;8;9
+Ibolya;level;9;3
+Iglic;viragzo hajtas;7;8
