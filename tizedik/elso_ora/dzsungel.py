@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 path = None
 while not path:
@@ -9,7 +9,7 @@ if path == "1":
 
 elif path == "2":
   hp = 100
-  steps = 1
+  steps = 0
   veszely = ["Találkoztál egy nagy, éhes tigrissel",
              "Átkeltél egy veszélyes folyón, és az áramlat elragadott.",
              "Megbotlottál egy csapdában.",
@@ -19,7 +19,7 @@ elif path == "2":
     kocka = randint(1, 6)
     print(f"{kocka}-t dobtál.")
     if kocka == 1:
-      print(veszely[randint(0, len(veszely)-1)])
+      print(choice(veszely))
       hp -= 8
       print("Életerőd: ", hp)
     else:
