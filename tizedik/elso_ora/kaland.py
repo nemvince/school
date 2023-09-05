@@ -1,7 +1,5 @@
 from random import randint, shuffle
 
-
-
 def init():
   inv = {
     "food": False,
@@ -25,15 +23,32 @@ def gnome_questions(inv, questions):
   for question in questions.keys():
     print(question)
     answers = questions.get(question)
+    correct = answers[0]
+    shuffle(answers)
+    correct = answers.index(correct) + 1
+
     for index, answer in enumerate(answers):
       print(f"{index+1}. {answer}")
-    response = input()
-    if response == "1":
-      inv["food"] = True
-      print(f"Ügyes vagy, most már van élelmed.")
+    response = None
+    answered = 0
+    while not response:
+      response = input()
+      try:
+          response = int(response)
+      except ValueError:
+        print("Egész számot adj meg!")
+        response = None
+        continue
+      if response == correct:
+        inv["food"] = True
+        print(f"Ügyes vagy, most már van élelmed.")
+        answered += 1
+      else:
+        print("Nem talált!")
+        break
+    if answered > 0:
       break
-    else:
-      print("Nem talált!")
+
   if not inv["food"]:
     print("Egy kérdést sem találtál el. Meghaltál.")
     exit()
@@ -72,16 +87,23 @@ def bossfight(inv):
   else:
     p_throws = [randint(1,6) for _ in range(3)]
     m_throws = [randint(1,6) for _ in range(3)]
+    print("A te dobásaid: ", ','.join(p_throws))
+    print("A szörny dobásai: ", ','.join(m_throws))
     if sum(p_throws) > sum(m_throws):
       print("Többet dobtál a szörnyél, nyertél!")
     else:
-      print("szopi xd")
+      print("Sajnos a szörny többet dobott, meghaltál.")
 
-inv, questions = init()
-gnome_questions(inv, questions)
-math_task(inv)
-palindrome_door(inv)
-rng_task(inv)
-bossfight(inv)
+def game():
+  inv, questions = init()
+  gnome_questions(inv, questions)
+  math_task(inv)
+  palindrome_door(inv)
+  rng_task(inv)
+  bossfight(inv)
+
+if __name__ == "__main__":
+  game()
+
 
 
