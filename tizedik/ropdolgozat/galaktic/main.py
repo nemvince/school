@@ -3,7 +3,6 @@ import random
 
 materials = ["Gold", "Crystal", "Fuel"]
 
-
 # Define classes
 class GameEvents:
     def generate_random_event(self):
