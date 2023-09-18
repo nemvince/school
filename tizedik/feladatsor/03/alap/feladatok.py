@@ -200,3 +200,18 @@ print(f"Fűnyírózással megspórolt CO2: {j} kg CO2")
 
 
 # 25. feladat
+a = float(input("Kérem adja meg az ingatlan értékét (Ft): "))
+
+b = a * 0.015
+c = a * 0.0275
+d = a * 0.04
+e = 40000
+f = 6600    
+g = sum([b, c, d, e, f])
+
+print(f"\nÜgyvéd díja: {b} Ft")
+print(f"Ingatlanügynök díja: {c} Ft")
+print(f"Ingatlan illetéke: {d} Ft")
+print(f"Energetikai tanúsítvány: {e} Ft")
+print(f"Tulajdoni lap díja: {f} Ft")
+print(f"\nTeljes kifizetendő összeg: {g} Ft")
