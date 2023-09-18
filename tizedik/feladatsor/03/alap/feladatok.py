@@ -177,3 +177,26 @@ print(f"A tanulók BMI-je: {int(a[2])/(int(a[1])/100)**2}, {int(b[2])/(int(b[1])
 print(f"A legnehezebb tanuló: {max(a[0], b[0], c[0], key=lambda x: int(x[2]))}")
 
 # 24. feladat
+a = float(input("Kérem adja meg az átlagos havi villanyszámlát (Ft-ban): "))
+b = a * 12
+c = b / 39
+d = c / (310 * 0.85)
+e = d * 1.7
+f = c * 0.57 * 0.45
+g = f * 4.747
+h = f * 0.541
+i = f * 0.243
+j = f * 0.0608
+
+print(f"Éves energia költség: {b} Ft")
+print(f"Éves villamos energia fogyasztás: {c} kWh")
+print(f"Napelemek száma: {d}")
+print(f"Tetőfelület mérete: {e} nm^2")
+print(f"Megtakarított széndioxid: {f} kg")
+print(f"Kocsikázással megspórolt távolság: {g} km")
+print(f"TV-megspórolás: {h} kg CO2")
+print(f"Telefonálással megspórolt CO2: {i} kg CO2")
+print(f"Fűnyírózással megspórolt CO2: {j} kg CO2")
+
+
+# 25. feladat
