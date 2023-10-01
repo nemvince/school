@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Young+Serif&display=swap');
+
+main {
+  max-width: 1023px;
+  margin: 0 auto;
+}
+
+.fancy {
+  font-family: 'Young Serif', serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
