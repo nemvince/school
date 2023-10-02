@@ -65,13 +65,6 @@ if data[distance]:
   print("c)")
   print("Folyamatosan mélyül" if isdeepening else "Nem mélyül folyamatosan.")
 
-  #d) mekkora a térfogata, ha szélessége minden helyen 10 méternyi! A meghatározott 
-  #értéket írja a képernyőre! 
-  #e) a félkész csatorna esőben jelentős mennyiségű vizet fogad be. Egy gödör annyi 
-  #vizet képes befogadni anélkül, hogy egy nagyobb szélvihar hatására se öntsön 
-  #ki, amennyi esetén a víz felszíne legalább 1 méter mélyen van a külső felszínhez 
-  #képest. Írja a képernyőre ezt a vízmennyiséget! 
-
   print("d)")
   print(f"A gödör térfogata {sum(data[start:end])*10} m^3.")
 
