@@ -25,3 +25,8 @@ h2 {
 label {
   max-width: 250px;
 }
+
+#imagediv {
+  /* i tried */
+  float: left;
+}
