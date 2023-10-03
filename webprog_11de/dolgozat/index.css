@@ -1,7 +1,3 @@
-blockquote {
-  margin: 1rem auto !important;
-}
-
 blockquote p {
   font-size: 1.2rem;
 }
@@ -20,4 +16,12 @@ blockquote p::after {
 
 h2 {
   margin-left: 0.2rem
+}
+
+#chateau {
+  width: 250px;
+}
+
+label {
+  max-width: 250px;
 }
