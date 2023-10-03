@@ -1,0 +1,23 @@
+blockquote {
+  margin: 1rem auto !important;
+}
+
+blockquote p {
+  font-size: 1.2rem;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-left: 0.2rem
+}
