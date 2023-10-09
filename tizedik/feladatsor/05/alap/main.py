@@ -62,5 +62,3 @@ for i in range(1000, 0, -3):
 #▪ Írjunk ki a képernyőre bekért darabszámú, bekért karaktert!
 #▪ Kérjünk be egy szöveget, majd keretezzük körbe csillagokkal!
 #▪ Rajzoljunk le egy 8*8-as sakktáblát csillagokból és szóközökből!
-
-
