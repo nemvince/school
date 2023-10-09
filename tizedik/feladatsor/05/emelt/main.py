@@ -5,14 +5,20 @@ class Player():
     self.country = country
     self.prize = int(prize)
 
+  # The main difference between __str__ and __repr__ is the purpose of their implementation.
+  # __str__ is used to provide a human-readable string representation of an object,
+  # while __repr__ is used to provide an unambiguous string representation of an object.
   def __repr__(self) -> str:
+    return f"{self.rank};{self.name};{self.country};{self.prize}"
+
+  def __str__(self) -> str:
     return f"{self.rank}. {self.name} ({self.country}): {self.prize}"
 
 players = []
-
 # 100% readable code
 with open("snooker.txt", encoding='utf-8') as f:
   d = [players.append(Player(*x.strip().split(";"))) for x in f.read().split('\n')[1:]]
+print(players)
 
 countries = {}
 for player in players:
