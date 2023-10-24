@@ -1,0 +1,41 @@
+{
+  "base_location": [47.47867164928053, 19.085626620259365],
+  "zoom_start": 13,
+  "locations": [
+    {
+      "name": "Budapesti Művészeti Egyetem",
+      "link": "https://hu.wikipedia.org/wiki/Budapesti_M%C5%B1szaki_%C3%A9s_Gazdas%C3%A1gtudom%C3%A1nyi_Egyetem",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Budapest_Tech_Univ_central_K_building.jpg/1024px-Budapest_Tech_Univ_central_K_building.jpg",
+      "latitude": 47.490871,
+      "longitude": 19.059093
+    },
+    {
+      "name": "Magyar Rádió Székhelye",
+      "link": "https://hu.wikipedia.org/wiki/Magyar_R%C3%A1di%C3%B3",
+      "image": "https://upload.wikimedia.org/wikipedia/hu/d/d3/Mrzrt.png",
+      "latitude": 47.441420,
+      "longitude": 19.133340
+    },
+    {
+      "name": "Széna tér",
+      "link": "https://hu.wikipedia.org/wiki/Sz%C3%A9na_t%C3%A9r_(Budapest)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sz%C3%A9na_t%C3%A9r_%28Budapest%29_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "latitude": 47.507780,
+      "longitude": 19.027110
+    },
+    {
+      "name": "Corvin köz",
+      "link": "https://hu.wikipedia.org/wiki/Corvin_k%C3%B6z",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Hole_in_flag_-_Budapest_1956.jpg",
+      "latitude": 47.48606167436796,
+      "longitude": 19.07100496845848
+    },
+    {
+      "name": "Ötvenhatosok tere",
+      "link": "https://hu.wikipedia.org/wiki/%C3%96tvenhatosok_tere",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Monument%2CBudapest_Keleti_-_panoramio.jpg",
+      "latitude": 47.448631,
+      "longitude": 19.147551
+    }
+  ]
+}
