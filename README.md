@@ -1,3 +1,3 @@
 # suliprog
 
-All the stuff I do in school
+mom come pick me up i'm scared.
