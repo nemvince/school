@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolgozat gyakorlás</title>
+  <script src="./arithmetic.js" defer></script>
+  <script src="./quadratic.js" defer></script>
+  <script src="./real.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white min-h-screen flex flex-col items-center justify-center">
+  <h1 class="mb-1 mt-6 text-xl font-bold shadow-lg">Calc-u-l8r Deluxe Pro 2000</h1>
+  <p class="mb-3">Now sugar free!</p>
+  <article class="container max-w-sm bg-gray-700 rounded-lg shadow-lg mb-2">
+    <h1 class="text-lg font-bold text-center mt-2">Simple arithmetic</h1>
+    <div id="inputs" class="flex flex-col">
+      <input type="text" id="arithmetic-input-a" placeholder="Number 1" class="bg-gray-800 transition hover:bg-gray-600 focus:bg-gray-600 mx-3 mt-3 h-8 p-2 rounded-lg shadow-lg focus:outline-none">
+      <input type="text" id="arithmetic-input-b" placeholder="Number 2" class="bg-gray-800 transition hover:bg-gray-600 focus:bg-gray-600 mx-3 my-3 h-8 p-2 rounded-lg shadow-lg focus:outline-none">
+      <button id="arithmetic-button" class="bg-gray-800 mx-3 rounded-lg font-bold h-7 hover:bg-gray-600 transition">Do the math!</button>
+    </div>
+    <div id="operations">
+      <span class="flex flex-row justify-between mx-2 my-2">
+        <p class="font-bold">Addition</p>
+        <p id="addition"></p>
+      </span>
+      <span class="flex flex-row justify-between mx-2 my-2">
+        <p class="font-bold">Subtraction</p>
+        <p id="subtraction"></p>
+      </span>
+      <span class="flex flex-row justify-between mx-2 my-2">
+        <p class="font-bold">Multiplication</p>
+        <p id="multiplication"></p>
+      </span>
+      <span class="flex flex-row justify-between mx-2 my-2">
+        <p class="font-bold">Division</p>
+        <p id="division"></p>
+      </span>
+      <span class="flex flex-row justify-between mx-2 my-2">
+        <p class="font-bold">Floor division</p>
+        <p id="floor-division"></p>
+        <p class="font-semibold">Remainder</p>  
+        <p id="remainder"></p>
+      </span>
+      <span class="flex flex-row justify-between mx-2 my-2">
+        <p class="font-bold">Exponentiation</p>
+        <p id="exponentiation"></p>
+      </span>
+    </div>
+    <hr class="m-2">
+    <h1 class="text-lg font-bold text-center">Quadratic</h1>
+    <div id="quadratic" class="flex flex-col">
+      <input type="text" id="quadratic-input-a" placeholder="a" class="bg-gray-800 transition hover:bg-gray-600 focus:bg-gray-600 mx-3 mt-3 h-8 p-2 rounded-lg shadow-lg focus:outline-none">
+      <input type="text" id="quadratic-input-b" placeholder="b" class="bg-gray-800 transition hover:bg-gray-600 focus:bg-gray-600 mx-3 my-3 h-8 p-2 rounded-lg shadow-lg focus:outline-none">
+      <input type="text" id="quadratic-input-c" placeholder="c" class="bg-gray-800 transition hover:bg-gray-600 focus:bg-gray-600 mx-3 mb-1 h-8 p-2 rounded-lg shadow-lg focus:outline-none">
+      <div class="flex flex-row justify-between items-center mx-3 my-2">
+        <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Bonus mode</span>
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input type="checkbox" value="false" class="sr-only peer" id="quadratic-bonus-checkbox">
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+        </label>      
+      </div>
+      <button id="quadratic-button" class="bg-gray-800 mx-3 rounded-lg font-bold h-7 hover:bg-gray-600 transition">Do the math!</button>
+      <span class="flex flex-row justify-between mx-2 my-2">
+        <p class="font-bold">Solution</p>
+        <span>
+          <p id="quadratic-solution-problem" class="text-red-600 hidden">Nincs valós megoldás!</p>
+          <div class="flex flex-col gap-2 hidden" id="quadratic-solution-div">
+            <span class="flex flex-row">x<sub>1</sub>=<p id="quadratic-solution-1"></p></span>
+            <span class="flex flex-row">x<sub>2</sub>=<p id="quadratic-solution-2"></p></span>
+          </div>
+        </span>
+      </span>
+    </div>
+    <hr class="m-2">
+    <h1 class="text-lg font-bold text-center">Real numbers</h1>
+    <!-- one number in, sin cos tan out -->
+    <div id="real-numbers" class="flex flex-col">
+      <input type="text" id="real-numbers-input" placeholder="Number" class="bg-gray-800 transition hover:bg-gray-600 focus:bg-gray-600 mx-3 my-3 h-8 p-2 rounded-lg shadow-lg focus:outline-none">
+      <button id="real-numbers-button" class="bg-gray-800 mx-3 rounded-lg font-bold h-7 hover:bg-gray-600 transition">Do the math!</button>
+      <div id="real-numbers-results">
+        <span id="real-numbers-problem" class="hidden">
+          <p class="font-bold text-red-600 mx-2 my-2 text-center">Nincs megoldás!</p>
+        </span>
+        <span class="flex flex-row justify-between mx-2 my-2">
+          <p class="font-bold">Sin</p>
+          <p id="real-numbers-sin"></p>
+        </span>
+        <span class="flex flex-row justify-between mx-2 my-2">
+          <p class="font-bold">Cos</p>
+          <p id="real-numbers-cos"></p>
+        </span>
+        <span class="flex flex-row justify-between mx-2 my-2">
+          <p class="font-bold">Tan</p>
+          <p id="real-numbers-tan"></p>
+        </span>
+      </div>
+    </div>
+  </article>
+  <footer class="mb-6">
+    <h1>Made by Tamás Vince Kornél</h1>
+  </footer>
+</body>
+</html>
