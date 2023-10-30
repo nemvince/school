@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white min-h-screen flex flex-col items-center justify-center">
+    <h1 class="mb-1 mt-6 text-xl font-bold shadow-lg">Rand-o-tronic <span id="randotron"></span> Deluxe</h1>
+    <p class="mb-3">Now gluten free!</p>
+    <article class="container max-w-sm bg-gray-700 rounded-lg shadow-lg mb-2 p-2 gap-3 flex flex-col">
+        <p id="random-numbers" class="text-center"></p>
+        <p id="sum"></p>
+        <p id="average"></p>
+        <p id="minimum"></p>
+        <p id="maximum"></p>
+    </article>
+    
+    <script>
+        randomNumbers = [];
+        for (let i = 0; i < 14; i++) {
+            randomNumbers.push(Math.floor(Math.random() * 100));
+        }
+
+        randotron_k = Math.floor(Math.random() * 8 + 1) * 1000;
+        document.getElementById("randotron").innerHTML = randotron_k;
+    
+        document.getElementById("random-numbers").innerHTML = randomNumbers.join(", ");
+        document.getElementById("sum").innerHTML = "<b>Sum</b>: " + randomNumbers.reduce((a, b) => a + b, 0);
+        document.getElementById("average").innerHTML = "<b>Average</b>: " + (randomNumbers.reduce((a, b) => a + b, 0) / randomNumbers.length);
+        document.getElementById("minimum").innerHTML = "<b>Minimum</b>: " + Math.min(...randomNumbers);
+        document.getElementById("maximum").innerHTML = "<b>Maximum</b>: " + Math.max(...randomNumbers);
+    </script>
+</body>
+</html>
