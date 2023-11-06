@@ -1,3 +1,3 @@
 # suliprog
 
-mom come pick me up i'm scared.
+collection of all of my actually productive schoolwork and a bit of copilot tab-smashing.
