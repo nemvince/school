@@ -12,6 +12,10 @@ köszönetet elfogadok monsterben, vagy kínai kajában :)
 
 ### [1.6 - Megbízható hálózatok](1.6.md)
 
+### [1.7 - Hálózati trendek](1.7.md)
+
+### [1.8 - Hálózatbiztonság](1.8.md)
+
 ## Források
 
 - [Wikipedia](https://wikipedia.org)
