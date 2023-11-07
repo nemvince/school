@@ -1,8 +1,14 @@
 # Cisco CCNA - A hálózat jelene
 
-Ebben a mappáben találhatóak a Cisco CCNA tanfolyamhoz tartozó jegyzeteim
+**Az anyag a teljesség igénye nélkül készült, személyes tudás és vélemény alapján bővített, és nem helyettesíti a tanfolyamot.**
 
-## Fejezetek
+## Tartalomjegyzék
+
+### 1.0 - 1.1 - Bevezetés
+
+### [1.2 - Hálózatok részei](SOON.md)
+
+### [1.3 - Hálózatok megjelenése és topológiák](SOON.md)
 
 ### [1.4 - Gyakori hálózattípusok](1.4.md)
 
@@ -20,7 +26,9 @@ Ebben a mappáben találhatóak a Cisco CCNA tanfolyamhoz tartozó jegyzeteim
 
 ## Megjegyzések
 
-Az anyag a teljesség igénye nélkül készült, személyes tudás és vélemény alapján bővített, és nem helyettesíti a tanfolyamot.
+Az 1.0 és 1.1 fejezeteket nem fogom kidolgozni, mert azok bevezető jellegűek, és nem tartalmaznak általános információt.
+
+
 
 Csak ezzel az itt található anyaggal az 1.10.2 - Ellenőrző kvíz 100%-ra teljesíthető.
 
