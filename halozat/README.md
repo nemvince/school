@@ -28,8 +28,6 @@
 
 Az 1.0 és 1.1 fejezeteket nem fogom kidolgozni, mert azok bevezető jellegűek, és nem tartalmaznak általános információt.
 
-
-
 Csak ezzel az itt található anyaggal az 1.10.2 - Ellenőrző kvíz 100%-ra teljesíthető.
 
 köszönetet elfogadok monsterben, vagy kínai kajában :)
