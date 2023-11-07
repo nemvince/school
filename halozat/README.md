@@ -1,8 +1,6 @@
 # Cisco CCNA - A hálózat jelene
 
-ebben a mappeben találhatóak a Cisco CCNA tanfolyamhoz tartozó jegyzeteim
-
-köszönetet elfogadok monsterben, vagy kínai kajában :)
+Ebben a mappáben találhatóak a Cisco CCNA tanfolyamhoz tartozó jegyzeteim
 
 ## Fejezetek
 
@@ -15,6 +13,18 @@ köszönetet elfogadok monsterben, vagy kínai kajában :)
 ### [1.7 - Hálózati trendek](1.7.md)
 
 ### [1.8 - Hálózatbiztonság](1.8.md)
+
+### 1.9 - Csak egy Netacad hirdetés :)
+
+### 1.10 - Gyakorló feladatok
+
+## Megjegyzések
+
+Az anyag a teljesség igénye nélkül készült, személyes tudás és vélemény alapján bővített, és nem helyettesíti a tanfolyamot.
+
+Csak ezzel az itt található anyaggal az 1.10.2 - Ellenőrző kvíz 100%-ra teljesíthető.
+
+köszönetet elfogadok monsterben, vagy kínai kajában :)
 
 ## Források
 
