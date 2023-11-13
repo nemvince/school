@@ -137,7 +137,7 @@ while True:
     while d not in ["a", "b", "c", "d"]:
         d = input("mi legyen\na. novelni\nb. csokkenteni\nc. szorozni\nd. kilepni")
     if d == "d":
-        exit()
+        break
     m = take_int(msg="mérték?")
     if d == "a":
         l = [x+m for x in l]
