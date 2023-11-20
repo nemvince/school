@@ -13,21 +13,23 @@ print(f"Hatosok száma: {len(hatosok)}")
 
 
 # 2. feladat
-print("2. feladat")
+print("\n2. feladat")
 
 i = int(input("Adj meg egy számot: "))
 l = []
-while i != 15:
+while i != 1:
     l.append(i)
     i = int(input("Adj meg egy számot: "))
 
-print(f"Összeg: {sum(l)}")
-print(f"Legkisebb szám: {min(l)}, a {l.index(min(l))}. helyen van")
-print(f"Legnagyobb szám: {max(l)}, a {l.index(max(l))}. helyen van")
-
+if len(l) != 0:
+    print(f"Összeg: {sum(l)}")
+    print(f"Legkisebb szám: {min(l)}, a {l.index(min(l))}. helyen van")
+    print(f"Legnagyobb szám: {max(l)}, a {l.index(max(l))}. helyen van")
+else:
+    print("Menj el lottózni!")
 
 # 3. feladat
-print("3. feladat")
+print("\n3. feladat")
 
 l = []
 while len(l) != 5:
@@ -49,12 +51,16 @@ if len(r) != 0:
 
 
 # 4. feladat
-print("4. feladat")
+print("\n4. feladat")
 
 n = int(input("Adj meg egy számot:"))
 l = [random.randint(0, 20) for _ in range(n)]
 print(l)
 
+e = True
 for i in range(1, len(l) - 1):
     if l[i - 1] + l[i + 1] == 20:
         print(l[i])
+        e = False
+if e:
+    print("nincs olyan szám, amely a szomszédjainak az összege 20")
