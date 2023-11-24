@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./shop.js" defer></script>
+  <link href=data:, rel=icon>
+  <title>Shop</title>
+</head>
+<body class="h-screen">
+  <header class="bg-slate-300 p-1 justify-between flex">
+    <h1>shop</h1>
+    <nav>
+      <ul class="list-none">
+        <li><a class="text-cyan-700 hover:text-slate-700 cursor-pointer transition" onclick="clearCart()">clear cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="cart"
+      class="bg-slate-300 p-1 justify-between flex"
+    ></div>
+    <div id="products"></div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
