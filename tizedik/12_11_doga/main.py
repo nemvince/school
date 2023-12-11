@@ -18,3 +18,5 @@ main()
 
 # one liner
 x=input("Főnév: ");print('\n'.join([f'{"Az" if x[0] in "aáeéiíoóöőuúüű" else "A"} {x} {choice(["kicsi", "nagy", "közepes méretű"])}.']))
+
+# testing commit signing
