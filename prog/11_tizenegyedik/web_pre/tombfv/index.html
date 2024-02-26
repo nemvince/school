@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tömb függvények</title>
+  <style>
+    th {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <ul id="people"></ul>
+
+  <p id="cities"></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th onclick="sortTable('id')">ID</th>
+        <th onclick="sortTable('name')">Name</th>
+        <th onclick="sortTable('age')">Age</th>
+        <th onclick="sortTable('city')">City</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <input type="text" id="searchInput" placeholder="Search by name" oninput="searchTable()">
+
+
+
+  <script defer>
+    const people = [
+      {"id": 1, "name": "John", "age": 25, "city": "New York"},
+      {"id": 2, "name": "Alice", "age": 30, "city": "San Francisco"},
+      {"id": 3, "name": "Bob", "age": 28, "city": "Los Angeles"},
+      {"id": 4, "name": "Emily", "age": 22, "city": "Chicago"},
+      {"id": 5, "name": "Michael", "age": 35, "city": "Seattle"},
+      {"id": 6, "name": "Sophia", "age": 27, "city": "Boston"},
+      {"id": 7, "name": "David", "age": 31, "city": "Miami"},
+      {"id": 8, "name": "Olivia", "age": 26, "city": "Austin"},
+      {"id": 9, "name": "Daniel", "age": 29, "city": "Denver"},
+      {"id": 10, "name": "Ella", "age": 24, "city": "Portland"}
+    ]
+
+    console.log(people.sort((a, b) => a.name - b.name))
+
+    console.log(people.filter(person => person.age > 30))
+
+    console.log(people.map(person => `${person.name} (${person.age})`))
+
+    const peopleList = document.getElementById('people');
+
+    people.forEach(person => {
+      const li = document.createElement('li');
+      li.textContent = `${person.name} (${person.age})`;
+      peopleList.appendChild(li);
+    })
+
+    const cities = people.map(person => person.city);
+
+    const citiesParagraph = document.getElementById('cities');
+    citiesParagraph.textContent = cities.join(', ');
+
+    let sortOrder = {
+      column: '',
+      order: 1
+    };
+
+    function sortTable(column) {
+      if (sortOrder.column === column) {
+        sortOrder.order *= -1;
+      } else {
+        sortOrder.column = column;
+        sortOrder.order = 1;
+      }
+
+      const sortedPeople = people.sort((a, b) => {
+        const valueA = typeof a[column] === 'string' ? a[column].toUpperCase() : a[column];
+        const valueB = typeof b[column] === 'string' ? b[column].toUpperCase() : b[column];
+        return sortOrder.order * (valueA > valueB ? 1 : valueA < valueB ? -1 : 0);
+      });
+
+      renderTable(sortedPeople);
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('tbody');
+      tbody.innerHTML = '';
+
+      data.forEach(person => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${person.id}</td>
+          <td>${person.name}</td>
+          <td>${person.age}</td>
+          <td>${person.city}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function searchTable() {
+      const searchInput = document.getElementById('searchInput');
+      const searchTerm = searchInput.value.toLowerCase();
+
+      const filteredPeople = people.filter(person => person.name.toLowerCase().includes(searchTerm));
+      renderTable(filteredPeople);
+    }
+
+    renderTable(people);
+
+  </script>
+</body>
+</html>
