@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonim függvények, tömbfüggvények</title>
+</head>
+<body>
+  <form id="form-animal">
+    <input type="text" id="input-animal">
+    <button type="submit">Add</button>
+  </form>
+  <ul id="animals-length"></ul>
+
+  <form id="form-character">
+    <label for="input-character-name">Character name:</label>
+    <input type="text" id="input-character-name">
+
+    <select name="Cast" id="input-character-cast">
+    </select>
+
+    <label for="input-character-atk">Character attack:</label>
+    <input type="number" id="input-character-atk">
+
+    <label for="input-character-def">Character defense:</label>
+    <input type="number" id="input-character-def">
+
+    <button type="submit">Add</button>
+  </form>
+
+  <button id="button-list-characters">List</button>
+  <input type="checkbox" id="checkbox-filter-characters">
+  <label for="checkbox-filter-characters">Filter</label>
+  <select name="Cast" id="input-filter-character-cast">
+  </select>
+  <ul id="list-charaters">
+
+  </ul>
+
+  <script defer>
+    const numbers = Array.from({ length: 15 }, () => Math.floor(Math.random() * 41) - 20);
+    console.log(numbers.filter(n => n % 2 === 0).sort((a, b) => a - b));
+
+    const animals = ['cat', 'dog', 'mouse']
+    function getLen(animals) {
+      return animals.map(animal => animal.length);
+    }
+    console.log(getLen(animals));
+
+    const input = document.getElementById('input-animal');
+    const form = document.getElementById('form-animal');
+    const ul = document.getElementById('animals-length');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      animals.push(input.value);
+      ul.innerHTML = animals.map(animal => `<li>${animal} (${animal.length})</li>`).join('');
+      input.value = '';
+    });
+
+    ul.innerHTML = animals.map(animal => `<li>${animal} (${animal.length})</li>`).join('');
+
+    const cast = ['warrior', 'mage', 'rogue', 'cleric'];
+    const select = document.getElementById('input-character-cast');
+    select.innerHTML = cast.map(c => `<option value="${c}">${c}</option>`).join('');
+
+    const formCharacter = document.getElementById('form-character');
+    const inputName = document.getElementById('input-character-name');
+    const inputCast = document.getElementById('input-character-cast');
+    const inputAtk = document.getElementById('input-character-atk');
+    const inputDef = document.getElementById('input-character-def');
+
+    const characters = [];
+
+    formCharacter.addEventListener('submit', function(event) {
+      event.preventDefault();
+      characters.push({
+        name: inputName.value,
+        cast: inputCast.value,
+        atk: inputAtk.value,
+        def: inputDef.value
+      });
+      inputName.value = '';
+      inputAtk.value = '';
+      inputDef.value = '';
+    });
+
+    const buttonListCharacters = document.getElementById('button-list-characters');
+    const listCharacters = document.getElementById('list-charaters');
+    const checkboxFilterCharacters = document.getElementById('checkbox-filter-characters');
+    buttonListCharacters.addEventListener('click', function() {
+      if (checkboxFilterCharacters.checked) {
+        listCharacters.innerHTML = characters.filter(c => c.cast === inputFilterCharacterCast.value).map(c => `<li>${c.name} (${c.cast}) - atk: ${c.atk}, def: ${c.def}</li>`).join('');
+      } else {
+        listCharacters.innerHTML = characters.map(c => `<li>${c.name} (${c.cast}) - atk: ${c.atk}, def: ${c.def}</li>`).join('');
+      }
+    });
+
+    const inputFilterCharacterCast = document.getElementById('input-filter-character-cast');
+    inputFilterCharacterCast.innerHTML = cast.map(c => `<option value="${c}">${c}</option>`).join('');
+  </script>
+</body>
+</html>
