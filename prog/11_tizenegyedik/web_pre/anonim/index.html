@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonim függvének</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+
+</head>
+<body>
+  <button id="btn-one">Show other button</button>
+  <button class="hidden" id="btn-two">New counter button</button>
+
+  <hr>
+
+  <h1>Todos</h1>
+  <form id="todo-form">
+    <input type="text" id="todo-input">
+    <button type="submit">Add</button>
+  </form>
+  <ul id="todos">
+  </ul>
+  <script defer>
+    const btnOne = document.getElementById('btn-one');
+    const btnTwo = document.getElementById('btn-two');
+    btnOne.addEventListener('click', function() {
+      btnTwo.classList.remove('hidden');
+    });
+
+    btnTwo.addEventListener('click', function() {
+      const newBtn = document.createElement('button');
+      newBtn.textContent = '0';
+      document.body.appendChild(newBtn);
+      let counter = 0;
+      newBtn.addEventListener('click', function() {
+        counter++;
+        newBtn.textContent = counter;
+      });
+    });
+
+    const todoForm = document.getElementById('todo-form');
+    todoForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const todoInput = document.getElementById('todo-input');
+      const todoText = todoInput.value;
+      const todoList = document.getElementById('todos');
+      const newTodo = document.createElement('li');
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Delete';
+      deleteButton.addEventListener('click', function() {
+        todoList.removeChild(newTodo);
+      });
+      newTodo.textContent = todoText;
+      newTodo.appendChild(deleteButton);
+      todoList.appendChild(newTodo);
+      todoInput.value = '';
+    });
+  </script>
+</body>
+</html>
