@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reakcióidő</title>
+  <style>
+    #button-start {
+      background-color: #4CAF50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 30vh;
+      width: 50%;
+      border: 1px solid black;
+      padding: 1em;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <button id="button-start">
+    Start
+  </button>
+
+  <script defer>
+    const buttonStart = document.getElementById('button-start');
+    let inProgress = false;
+    let early = false;
+    let start;
+    let waiter;
+    buttonStart.addEventListener('click', function () {
+      if (inProgress) {
+        clearTimeout(waiter);
+        if (early) {
+          buttonStart.textContent = 'Too early!';
+          buttonStart.style.backgroundColor = 'red';
+        } else {
+          const end = Date.now();
+          buttonStart.textContent = `${(end - start) / 1000}s`;
+          buttonStart.style.backgroundColor = 'green';
+          console.log((end - start) / 1000);
+        }
+        setTimeout(() => {
+          buttonStart.textContent = 'Start';
+          buttonStart.style.backgroundColor = 'green';
+          inProgress = false;
+          early = false;
+        }, 1000);
+        return;
+      }
+      inProgress = true;
+      early = true;
+
+      waiter = setTimeout(() => {
+        start = Date.now();
+        early = false;
+        console.log("ready")
+        buttonStart.textContent = 'Click!';
+        buttonStart.style.backgroundColor = 'blue';
+      }, Math.random() * 2000 + 1000);
+
+      buttonStart.textContent = 'Wait...';
+      buttonStart.style.backgroundColor = 'yellow';
+    });
+  </script>
+</body>
+</html>

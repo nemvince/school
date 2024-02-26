@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toastmaster</title>
+</head>
+<body>
+  <button id="button-start">Start toast</button>
+  <div style="display: flex; flex-direction: row;">
+    <span id="counter"></span>
+    <span id="p-counter" style="display: none;"> s</span>
+  </div>
+
+  <script defer>
+    const counter = document.getElementById('counter');
+    const pCounter = document.getElementById('p-counter');
+    const buttonStart = document.getElementById('button-start');
+    buttonStart.addEventListener('click', function () {
+      pCounter.style.display = 'block';
+      counter.textContent = 0;
+      buttonStart.disabled = true;
+      buttonStart.textContent = 'Toast started';
+      setTimeout(function () {
+        document.body.style.backgroundColor = 'green';
+      }, 60000)
+      setTimeout(function () {
+        document.body.style.backgroundColor = 'yellow';
+      }, 90000)
+      setTimeout(function () {
+        document.body.style.backgroundColor = 'red';
+      }, 120000)
+      setInterval(function () {
+        counter.textContent = parseInt(counter.textContent) + 1;
+      }, 1000)
+      pCounter.style.display = 'none';
+      counter.textContent = 0;
+      buttonStart.disabled = false;
+      buttonStart.textContent = "Start toast";
+    })
+</script>
+</body>
+</html>
