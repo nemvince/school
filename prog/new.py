@@ -34,5 +34,3 @@ if cmd.startswith('fn'):
 
   # open it in code
   os.system("code " + os.path.join(path, dir, 'py', 'feladatsor', str(new_dir), 'alap', 'main.py'))
-
-  # just testing if signing works in vscode
