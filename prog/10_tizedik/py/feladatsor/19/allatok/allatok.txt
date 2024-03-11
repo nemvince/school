@@ -1,0 +1,20 @@
+Kutya;Négylábú;Hűséges;10
+Macska;Négylábú;Független;4.5
+Tigris;Négylábú;Erős;170
+Cápa;Vízi;Ragadozó;700
+Elefánt;Négylábú;Nagy;2500
+Pók;Többlábú;Kis;0.02
+Sas;Kétlábú;Nagy;7.5
+Delfin;Vízi;Okos;350
+Orángután;Négylábú;Okos;75.5
+Kígyó;Hüllő;Hosszú;1.5
+Panda;Négylábú;Bambuszevő;120.3
+Kacsacsőrű emlős;Négylábú;Szárnyas;3.2
+Zebra;Négylábú;Csíkos;400.7
+Róka;Négylábú;Ravasz;9.8
+Leopárd;Négylábú;Gyors;85.6
+Ökör;Négylábú;Erős;950.2
+Gorilla;Négylábú;Erős;280.5
+Törpe sün;Hüllő;Tüskés;0.3
+Papagáj;Kétlábú;Színes;0.15
+Krokodil;Hüllő;Veszélyes;550

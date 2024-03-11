@@ -1,0 +1,5 @@
+Bomi	1997	him	1875.0
+Berny	2000	him	1145.0
+Chipo	2006	him	250.0
+Mandala	2008	him	1589.0
+Dupe	2012	him	257.0
