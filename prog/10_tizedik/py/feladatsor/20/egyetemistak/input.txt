@@ -1,0 +1,20 @@
+Anna Kovács;1998;Informatika
+Gábor Tóth;1999;Közgazdaságtan
+Zsófia Nagy;1997;Biológia
+Péter Szabó;1996;Angol nyelv és irodalom
+Katalin Fekete;1998;Pszichológia
+János Varga;1997;Gazdálkodási és menedzsment
+Eszter Kiss;1999;Matematika
+Bence Csernus;1998;Művészettörténet
+Dóra Balázs;1996;Földrajz
+Attila Kertész;1997;Fizika
+Viktória Papp;1999;Informatikai menedzsment
+Gergő Kovács;1998;Kémia
+Zsolt Horváth;1997;Angol nyelv és irodalom
+Lilla Takács;1996;Informatika
+Máté Mészáros;1998;Biológia
+Zoltán Szilágyi;1999;Közgazdaságtan
+Bianka Kovács;1997;Gazdálkodási és menedzsment
+Ádám Farkas;1996;Matematika
+Emma Varga;1998;Pszichológia
+Levente Kiss;1999;Művészettörténet
