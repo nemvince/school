@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolView - {{ task_name }}</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body class="bg-gray-100 h-svh">
+    <div class="p-4 flex flex-row justify-between items-center mb-4">
+        <a href="/" class="bg-blue-500 hover:bg-blue-700 active:bg-blue-800 transition p-2 rounded-lg hover:shadow-xl shadow-md">Back</a>
+        <h1 class="text-2xl font-bold mb-4">Viewing {{ task_name }}</h1>
+        <span></span>
+    </div>
+
+    <div class="p-4 grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 gap-6">
+        <div class="bg-gray-200 p-3 rounded-xl shadow-lg h-full">
+            <div class="flex flex-row justify-between items-center">
+                <h1 class="text-xl font-bold mb-2">Task sheet</h1>
+                <a href="/tasksheet/{{ task_name }}?asAttachment=True" class="bg-blue-500 hover:bg-blue-700 active:bg-blue-800 transition p-2 rounded-lg hover:shadow-xl shadow-md">Download</a>
+            </div>
+            <embed src="/tasksheet/{{ task_name }}" class="rounded-xl mt-4 shadow-lg w-full h-full">
+        </div>
+
+        <div class="bg-gray-200 p-3 rounded-xl shadow-lg h-full">
+            <div class="flex flex-row justify-between items-center">
+                <h1 class="text-xl font-bold mb-2">Solution</h1>
+                <a href="/solution/{{ task_name }}" class="bg-blue-500 hover:bg-blue-700 active:bg-blue-800 transition p-2 rounded-lg hover:shadow-xl shadow-md">Download</a>
+            </div>
+            <pre class="mt-4 shadow-lg"><code class="language-python rounded-xl bg-gray-800 text-gray-200">{{ solText }}</code></pre>
+        </div>
+    </div>
+</body>
+
+</html>

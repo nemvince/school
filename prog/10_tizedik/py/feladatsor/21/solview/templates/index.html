@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolView</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+    <h1 class="text-2xl font-bold mb-4">Available tasks</h1>
+    <ul>
+        {% for task in tasks %}
+        <li class="bg-white shadow-md rounded-md p-4 mb-4">
+            <p class="text-lg">{{ task }}</p>
+            <a href="/task/{{ task }}" class="text-blue-500">View task</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
