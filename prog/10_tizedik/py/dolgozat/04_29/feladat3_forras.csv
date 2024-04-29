@@ -1,0 +1,61 @@
+kategória;név;ár;gluténmentes
+leves;húsleves;890;igen
+leves;májgaluska leves;990;nem
+főétel;bécsi szelet;1600;igen
+előétel;Fűszeres tatár beefsteak;3400;igen
+előétel;Kevertsaláta citrusos öntettel;1600;igen
+előétel;Zsíros-májas, friss kerti javakkal;2400;igen
+leves;Lakodalmas húsleves gazdagon;1700;igen
+leves;Csirkeragu leves;2000;igen
+leves;Hideg joghurtos málna krémleves mandulás túrógolyóval;1800;igen
+leves;Cukorborsó krémleves pirított lazaccal;2400;igen
+leves;Fokhagymakrémleves cipóban;2000;igen
+főétel;Sonkás-juhtúróval töltött csirkemell illatos jázminrizzsel;2200;nem
+főétel;Cordon Bleu;1300;igen
+főétel;Mézes gyömbéres csirkemell steak, forró erdei gyümölcs öntettel, házi burgonyakrokettel;3000;nem
+főétel;Ropogós felezett kacsa pirított savanyúkáposztás galuskával;2500;igen
+főétel;Zöldfűszerekkel pácolt csirkemell, márványsajtos, gombás rizottóval;3000;igen
+főétel;Cézár saláta (csirke);1500;igen
+főétel;Cheddar sajtos csirke tortilla steak burgonyával, salsával;1500;nem
+főétel;Óriás bécsi szelet, fűszeres steakburgonyával;3400;igen
+főétel;Sajttal pirított graten borda;2700;nem
+főétel;Cigánypecsenye;1800;igen
+főétel;Erdélyi fatányéros;2800;igen
+főétel;Ropogós sertés csülök vele sült burgonyával;2800;igen
+főétel;Pikáns sertés szűz zöldséges tagliatellével;2600;igen
+főétel;Bélszíncsíkok gyömbéres parajjal, burgonyakrokettel;1400;igen
+főétel;Bélszín steak, színes borsmártással;4000;igen
+főétel;Inárcsi gomolyasajtos bélszíntorta;4050;igen
+főétel;Gomolyasajttal grillezett lazacfilé snidling mártással;1800;nem
+főétel;Lazacsteak rózsaborsos parajjal, lime mártással;2500;igen
+főétel;Harcsapaprikás juhtúrós galuskával és szalonna pörccel;1700;igen
+főétel;Cézár saláta tonhallal;3400;igen
+főétel;Sajtsteak roston sütve, balzsamos-olívás salátával;3300;igen
+főétel;Rántott sajt;1200;nem
+főétel;Zöldséges tagliatelle koktélparadicsommal;3000;igen
+főétel;Zöldségekkel töltött cukkini csónak sajttal egybesütve;3600;igen
+főétel;Halrudacska rizzsel;1900;nem
+főétel;Rántott sajt, hasábburgonyával;3500;nem
+főétel;Rántott csirkemell hasábburgonyával;2800;nem
+köret;Burgonyapüré;550;nem
+köret;Burgonyapüré - Tejszínes, kukoricás;600;nem
+köret;Burgonyapüré - Fokhagymás;600;nem
+köret;Hasábburgonya;650;igen
+köret;Édesburgonya;700;igen
+köret;Steakburgonya;650;igen
+köret;Steakburgonya - Cheddar sajttal;800;nem
+köret;Párolt jázminrizs;500;igen
+köret;Grill zöldség;600;igen
+köret;Házi burgonyakrokett;600;nem
+savanyúság;Káposztasaláta;600;igen
+savanyúság;Paradicsomsaláta;550;igen
+savanyúság;Uborkasaláta;550;igen
+savanyúság;Ecetes almapaprika;450;igen
+savanyúság;Csemege uborka;500;igen
+savanyúság;Kovászos uborka (szezonális);550;igen
+savanyúság;Céklasaláta (szezonális);600;igen
+desszert;Brownie mentás erdei gyümölcs mártással és vanília fagylalttal;1100;nem
+desszert;Somlói galuska;1200;igen
+desszert;Három csokis szuflé, meggyraguval, vanília fagylalttal;900;nem
+desszert;Mandulás túrógolyó joghurtos erdeigyümölcs öntettel;850;nem
+desszert;Palacsinta (kakaós, mogyorókrémes, túrós, lekváros);750;nem
