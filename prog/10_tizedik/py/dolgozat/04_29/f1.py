@@ -1,0 +1,5 @@
+input("Adja meg az étterem nevét! ")
+n = int(input("Hány menüt értékesítettek? "))
+print(f"Az étterem bevétele: {n*1800} Forint")
+print(f"Egy napra átlagosan {round(n*1800/7,2)} Forint bevétel jutott.")
+print(f"A heti értékesítés {'nyereséges' if n >= 1000 else 'veszteséges'} volt.")
