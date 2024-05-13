@@ -1,0 +1,94 @@
+body{
+    background-color: #e8e2e1;    
+}
+
+h1, h2{
+    color: #5c3829;  
+}
+
+h3{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+img{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+footer, nav {
+    background-color: #024600;
+}
+
+header {
+    height: 350px;
+    background-image: url("../img/tiger_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.felkover{    
+    font-weight: bold;
+}
+
+.dolt{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.jobbra a, #link a{
+    color: rgb(16, 37, 82);
+    font-variant: small-caps;    
+    padding: 5px;
+    text-decoration: none;
+}
+
+.jobbra a:hover, #link a:hover{
+    background-color: white;
+}
+
+.jobbra{
+    text-align: right;
+    font-style: italic;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#alfajok {
+    list-style-image: url("../img/tiger.png");
+}
+
+#taplalek {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 80%;
+    font-size: 120%;
+    border: 5px double #5c3829;
+    margin: 10px auto;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#species img {
+    border-radius: 30px;
+}
+
+#vadaspark {
+    margin: 15px auto;
+    width: 40%;
+    display: block;
+}
