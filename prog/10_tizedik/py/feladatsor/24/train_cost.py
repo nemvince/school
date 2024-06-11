@@ -1,0 +1,5 @@
+print("1. feladat")
+a = input("\tMekkora távolságra utazik (Km)? ")
+b = input("\tMennyibe került az utazás? ")
+print(f"Az út egy kilómétere {int(round(int(b)/int(a), -1))} Ft-ba került.")
+print(f"Az út {'vonattal' if int(b)/int(a) < 36 else 'autóval'} olcsóbb.")
